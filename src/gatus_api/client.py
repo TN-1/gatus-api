@@ -39,7 +39,7 @@ class GatusClient:
                             name=ep["name"],
                             group=ep.get("group"),
                             results=[
-                                Result(success=r["success"], status=r["status"])
+                                Result(success=r["success"], status=r.get("status"))
                                 for r in ep.get("results", [])
                             ],
                         )

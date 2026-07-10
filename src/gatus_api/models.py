@@ -7,7 +7,7 @@ class Result:
     """Representation of an endpoint check result."""
 
     success: bool
-    status: int
+    status: int | None = None
 
 
 @dataclass(frozen=True)
