@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gatus-api"
-version = "1.0.3"
+version = "1.0.4"
 description = "An asynchronous Python client for the Gatus API"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -17,9 +17,16 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+keywords = ["gatus", "api", "async", "client", "aiohttp", "monitoring"]
 dependencies = [
     "aiohttp>=3.9.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/TN-1/gatus-api"
+Repository = "https://github.com/TN-1/gatus-api"
+Issues = "https://github.com/TN-1/gatus-api/issues"
+Changelog = "https://github.com/TN-1/gatus-api/releases"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/gatus_api"]
